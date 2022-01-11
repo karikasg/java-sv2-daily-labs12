@@ -23,4 +23,24 @@ class MathAlgorithmsTest {
         assertEquals(1, mathAlgorithms.lnko(155, 84));
     }
 
+    @Test
+    void lnko2Test1() {
+        assertEquals(22, mathAlgorithms.lnko2(242, 88));
+    }
+
+    @Test
+    void lnko2Test2() {
+        assertEquals(4, mathAlgorithms.lnko2(68, 128));
+    }
+
+    @Test
+    void lnko2Test3() {
+        assertEquals(1, mathAlgorithms.lnko2(155, 84));
+    }
+
+    @Test
+    void lnko2Test4() {
+        assertEquals(6, mathAlgorithms.lnko2(1668, 1194));
+    }
+
 }
