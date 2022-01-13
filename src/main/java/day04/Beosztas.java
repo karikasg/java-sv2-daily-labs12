@@ -14,10 +14,8 @@ public class Beosztas {
 
     public void reader() {
 
-
         try (BufferedReader br = Files.newBufferedReader(Path.of("src/main/resources/tanar.txt"))) {
             String name;
-
 
             while ((name = br.readLine()) != null) {
 
@@ -25,6 +23,7 @@ public class Beosztas {
             }
         }
         catch (IOException ioe) {
+            throw new IllegalStateException("File beolvasási hiba", ioe);
         }
     }
 
